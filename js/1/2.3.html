@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2.3</title>
+</head>
+<body>
+    <script>
+         var userName=prompt("Enter your name");
+        var charCheak;
+        while (true) {
+            charCheak =/^[a-zA-Z]+$/.test(userName)
+            if(charCheak){
+                alert("your name is right")
+                break;
+            }
+            else
+            {
+                alert("Enter only characters");
+                userName=prompt("Enter your name");
+            }    
+        }
+        var phone=prompt("Enter your phone number")
+        while (true) {
+                
+                var number =/^[0-9]{8}$/.test(phone)
+                console.log(number);
+                if(number&&phone.length === 8){
+                    alert("your number is valid")
+                    break;
+                }
+                else
+                {
+                    alert("your number is invalid")
+                    phone=prompt("Enter your phone number")
+                }
+          }
+        var mobile=prompt("Enter eg mobile") 
+          while (true) {
+                   
+                    var mobileValid =/^(010 || 012 || 011|| 015)[0-9]{11}$/.test(mobile)
+   
+
+                    if(mobileValid&&mobile.length == 11){
+                        alert("your number is valid")
+                        break
+                    }
+                    else
+                    {
+                        alert("your number is invalid")
+                        mobile=prompt("Enter your mobile")
+                    }
+                }
+        var email=prompt("Enter your E-Mail");        
+        while (true) {
+                            var pattern=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+                            
+                            if(pattern.test(email)){
+                                alert("your E-Mail is valid")
+                                break;
+                            }
+                            else
+                            {
+                                alert("your E-Mail is invalid")
+                                email=prompt("Enter your E-Mail");
+                            }
+                    }
+        var color=prompt("enter red green or blue color");
+        while (true) {
+        if(color==='red'||color==='green'||color==='blue'){
+            pColor(color);
+            break;
+        }
+        else{ alert("enter red,green or blue color")
+        color=prompt("enter red green or blue color");}
+        }
+        function pColor(color){
+        document.write("<p style=\" color:"+this.color+";display: inline; \">welcome dear guest</p> "+userName+"<br>" );
+        document.write("<p style=\" color:"+this.color+";display: inline; \">your telephone no is </p> "+phone+"<br>" );
+        document.write("<p style=\"color:"+this.color+";display:inline;\">your mobile no is </p>"+mobile+"<br>");
+        document.write("<p style=\"color:"+this.color+";display:inline;\">your email  is </p>"+email);
+        }
+    </script>
+</body>
+</html>

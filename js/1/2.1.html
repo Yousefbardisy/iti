@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+</head>
+<body>
+    <script>
+           var word=prompt("enter p");
+        var char=prompt("enter char you want to search");
+        var sent=confirm('do you want sanstive')
+
+        if(sent) document.write(charCount(word, char));
+        else document.write(charCount(word.toLowerCase(), char.toLowerCase()));
+
+        function charCount(word, char) 
+        {
+         var Count = 0;
+         for (var i = 0; i < word.length; i++) 
+         {
+            if (word.charAt(i) == char) 
+              {
+              Count += 1;
+              }
+          }
+          return Count;
+        }
+    </script>
+</body>
+</html>

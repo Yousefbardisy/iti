@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+      
+      span{
+          font-size: 20px;
+          margin-left: 10px;
+          color: rgb(221, 28, 28);
+      }
+        input{
+            display: block;
+        }
+        
+        #sub{
+            width: 70px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        input:invalid{
+            border: 2px solid red;
+            }
+            input#name:invalid+span::after{content: "user name may only be char"; }
+            input#email:invalid+span::after{content: "email may not include any spicial char other the @ "; }
+
+    </style>
+</head>
+<body>
+    
+        <h1>Change E-mail Address</h1>
+    <form action="">
+        <input type="text" id="name" placeholder="UserName" width="100px" pattern="^[a-zA-Z]+"  required >
+        <span></span>
+        <input type="email" id="email" placeholder="E-mail" width="100px"  required>
+        <span></span>
+
+        <div ><input id="sub" type="submit" value="Change"></div>
+    </form>
+   
+    <script></script>
+</body>
+</html>

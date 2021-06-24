@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Task 1</title>
+        <style>
+            body{
+                background-color: rgb(72, 214, 16);
+            }
+          
+        </style>
+    </head>
+    <body>
+        <video id="video" src="1.mp4"  width="500" height="400"    ontimeupdate="showdur() "></video>
+        <div class="controls"><button id="play" onclick="play()">play</button>
+            <button id="pause" onclick="pause()">pause</button>
+            <button id="stop" onclick="stop()">stop</button>
+            volume
+            <input id="range" type="range" value="50" max="100" step="1" onchange="showVolum(this.value)">
+        </div>
+        <div>
+            Duration
+            <input id="duration" type="range" value="0"  step="0.1" onchange="conCurrentTime()" >Duration =<span id="currentdur"></span><br>
+            Speed
+            <input id="speed" type="range" value="5" max="16" step="1" onchange="speedfun(this.value)">
+            Slow
+            <input id="slow" type="range" value="5" max="10" step="1" onchange="slowfun(this.value)">
+        </div>
+        <script src="1.js"></script>
+    </body>
+</html>

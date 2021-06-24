@@ -1,0 +1,38 @@
+body{
+    background-color:  rgb(280, 280, 280)
+
+ }
+ #intro{
+     border-radius: 22px;
+ }
+ .ll li a{
+     text-decoration:none;
+     color: black;
+     padding-left: 24px;
+     font-size: 14px;
+ }
+ h3{
+     font-size: 18px;
+ }
+ p a{
+     color: #777;
+     transition: .3s;
+     font-size: 16px;
+ }
+ p a:hover{
+     color: black;
+ }
+ .pp{
+     /* padding-left: 20px; */
+     padding:30px 20px;
+ }
+ .comment-link{
+     color: black;
+ }
+ .comment-link:hover{
+     text-decoration: none;
+ }
+ .art-m{
+     background-color: rgb(220, 220, 220);
+     border-radius: 20px;
+ }

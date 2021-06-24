@@ -1,0 +1,39 @@
+users 
+    id
+    name
+    age
+
+
+http://localhost:3000 
+
+/users 
+/users/id
+/users 
+
+
+//lab
+
+create model Todo 
+    Date        default
+    Title       required
+    Status      default
+    Body        optional 
+
+endpoints 
+GET    /todos  
+GET    /todos/:id 
+POST   /todos
+PUT    /todos/:id           {todo}
+PATCH  /todos/:id           {title:"REACT"}
+DELETE /todos/:id            
+
+
+//
+serve static folder
+index.html
+    list all todos 
+
+/assets/index.html
+
+        title 
+        body 

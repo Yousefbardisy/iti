@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome</title>
+</head>
+<body>
+    <script>
+        var word1=prompt("enter p");
+        var word2=rev(word1);
+
+        var check=confirm('do you want casesanstive')
+
+                if(check) palindrome(word1,word2);
+                else palindrome(word1.toLowerCase(), word2.toLowerCase());
+
+        function palindrome(word1,word2){
+        if(word1==word2)document.write("is palindrome");
+        else document.write("is't palindrome");
+        }
+
+        function rev(x){
+            var palindrome = x.split(""); 
+            var palindrome = palindrome.reverse();
+            var palindrome = palindrome.join("");
+            // document.write(palindrome);
+            return palindrome
+        }
+    </script>
+</body>
+</html>

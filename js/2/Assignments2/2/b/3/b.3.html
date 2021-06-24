@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>b.3</title>
+    </head>
+    <style>
+        #frame{
+            width: 350px;
+            height: 350px;
+            border: 1.2px solid red;
+            position: relative;
+            margin:  160px auto;
+            background: cadetblue;
+           
+            
+        }
+        .msg{
+            text-align: center;
+        }
+        img{
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            position: absolute;
+        }
+        body{
+            background-color: rgb(16, 172, 184);
+        }
+        button{
+            background: rgb(211, 7, 7);
+            width: 60px;
+            color: #fff;
+        }
+    </style>
+    <body >
+        <div class="msg">
+        <div id="frame">
+            <img src="img/icon1.gif" id="i1" style="left: 0px; top: 45%;">
+            <img src="img/icon2.gif" alt="" id="i2" style="right: 0%;top: 45%;">
+            <img src="img/TOP.JPG" alt="" id="i3" style=" bottom: 0%; right: 48%;">
+            <div style="position: absolute; bottom: -8%; left: 38%;">
+                <button onclick="go()" id="go" >go</button>
+                <button onclick="reset()">reset</button>
+            </div>
+            
+        </div>
+        <div id='msg1'></div>
+            <div id='msg2'></div>
+            <div id='msg3'></div>
+    </div>
+      
+        
+        
+        <script src="b.3.js"></script>
+    </body>
+</html>
